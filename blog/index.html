@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Stiff Hand Journal — CMMSPro.AI Blog</title>
-<meta name="description" content="Clinical insights on stiff hand rehabilitation and the CMMS technique, by Robyn Midgley. Video lessons, case discussions and evidence-based practice for hand therapists.">
+<meta name="description" content="Clinical insights, video lessons and case discussions on stiff hand rehabilitation and the CMMS technique, by Robyn Midgley. Evidence-based practice for hand therapists.">
 <link rel="canonical" href="https://www.cmmspro.ai/blog/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,69 +18,77 @@
     --sans: 'Lato', Arial, sans-serif;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
   body { font-family: var(--sans); font-weight: 300; color: var(--text); background: var(--bg); line-height: 1.7; font-size: 1.05rem; }
   img { max-width: 100%; display: block; }
-  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 1.4rem; }
-  h1, h2, h3 { font-family: var(--serif); color: #fff; line-height: 1.2; }
-  a.btn {
-    display: inline-block; background: var(--mint); color: #fff; text-decoration: none;
-    font-weight: 400; letter-spacing: 0.04em; text-transform: uppercase;
-    padding: 0.8rem 2rem; border-radius: 8px; font-size: 0.95rem;
-  }
-  a.btn:hover { background: var(--mint-dark); }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 1.4rem; }
+  h1, h2, h3 { font-family: var(--serif); color: #fff; line-height: 1.25; }
+  a { color: var(--mint-text); }
 
+  /* Nav */
   header.nav { position: sticky; top: 0; z-index: 100; background: rgba(11,11,11,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,0.07); }
-  .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 0.7rem 1.4rem; max-width: 1120px; margin: 0 auto; }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 0.7rem 1.4rem; max-width: 1160px; margin: 0 auto; }
   .nav-logo { font-family: var(--serif); font-weight: 900; font-size: 1.3rem; color: #fff; text-decoration: none; }
   .nav-logo span { color: var(--mint-text); }
   .nav-links { display: flex; gap: 1.6rem; align-items: center; }
   .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 0.92rem; }
   .nav-links a:hover { color: var(--mint-text); }
-  .nav-links a.login { border: 1.5px solid var(--mint); color: var(--mint-text); padding: 0.4rem 1.1rem; border-radius: 6px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.05em; }
-  .nav-links a.login:hover { background: rgba(82,201,163,0.12); }
   .nav-social { display: flex; gap: 0.7rem; align-items: center; }
   .nav-social a { display: flex; opacity: 0.75; }
   .nav-social a:hover { opacity: 1; }
   .nav-social svg { width: 19px; height: 19px; fill: #fff; }
   .nav-social a.yt svg { fill: #ff4b4b; }
+
+  /* Journal header: title/description left, image right */
+  .journal-header { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; padding: 3.5rem 0 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .jh-kicker { font-family: var(--sans); color: var(--mint-text); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 0.8rem; }
+  .jh-title { font-size: 2.9rem; margin-bottom: 1rem; }
+  .jh-desc { color: var(--text-dim); font-size: 1.1rem; }
+  .jh-img { border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+  .jh-img img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16/10; }
+
+  /* Two-column body: post feed + recent-posts sidebar */
+  .journal-layout { display: grid; grid-template-columns: 1fr 300px; gap: 3rem; padding: 3rem 0 5rem; align-items: start; }
+
+  .post-row { display: grid; grid-template-columns: 260px 1fr; gap: 1.6rem; padding: 1.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); align-items: center; }
+  .post-row:first-child { padding-top: 0; }
+  .pr-thumb { position: relative; border-radius: 10px; overflow: hidden; background: #000; aspect-ratio: 16/10; }
+  .pr-thumb img { width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: opacity 0.15s, transform 0.2s; }
+  .post-row:hover .pr-thumb img { opacity: 1; transform: scale(1.03); }
+  .pr-thumb .play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+  .pr-thumb .play span { width: 48px; height: 48px; background: rgba(82,201,163,0.92); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.1rem; padding-left: 3px; }
+  .pr-tag { color: var(--mint-text); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.09em; margin-bottom: 0.4rem; }
+  .pr-body h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+  .pr-body h2 a { color: #fff; text-decoration: none; }
+  .pr-body h2 a:hover { color: var(--mint-text); }
+  .pr-body p { color: var(--text-dim); font-size: 0.98rem; margin-bottom: 0.7rem; }
+  .pr-read { color: var(--mint-text); font-weight: 700; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+
+  /* Recent posts sidebar */
+  .recent { position: sticky; top: 90px; background: linear-gradient(165deg, #191919, #131715); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 1.6rem; }
+  .recent h3 { font-size: 1.15rem; margin-bottom: 1.1rem; padding-bottom: 0.7rem; border-bottom: 2px solid var(--mint); }
+  .recent-item { display: grid; grid-template-columns: 64px 1fr; gap: 0.9rem; align-items: center; text-decoration: none; padding: 0.7rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .recent-item:last-child { border-bottom: none; }
+  .recent-item img { width: 64px; height: 48px; object-fit: cover; border-radius: 6px; opacity: 0.85; }
+  .recent-item:hover img { opacity: 1; }
+  .recent-item span { color: var(--text); font-size: 0.9rem; line-height: 1.35; }
+  .recent-item:hover span { color: var(--mint-text); }
+
+  footer { background: var(--bg-deep); border-top: 1px solid rgba(255,255,255,0.07); padding: 2.5rem 0; text-align: center; color: #8a8a8a; font-size: 0.9rem; }
+  footer a { color: var(--mint-text); text-decoration: none; }
   .footer-social { display: flex; gap: 1rem; justify-content: center; margin-top: 1rem; }
   .footer-social a { display: flex; opacity: 0.8; }
   .footer-social a:hover { opacity: 1; }
   .footer-social svg { width: 22px; height: 22px; fill: #fff; }
   .footer-tag { font-family: var(--serif); font-style: italic; color: var(--mint-text); margin-top: 0.8rem; }
 
-  .blog-hero { text-align: center; padding: 4.5rem 1.4rem 3.5rem; background: var(--bg-deep); }
-  .blog-hero h1 { font-size: 2.8rem; margin-bottom: 0.8rem; }
-  .blog-hero p { color: var(--text-dim); max-width: 620px; margin: 0 auto; font-size: 1.1rem; }
-
-  .posts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; padding: 3.5rem 0 5rem; }
-  .post {
-    background: linear-gradient(165deg, #191919, #131715);
-    border: 1px solid rgba(255,255,255,0.09); border-radius: 14px; overflow: hidden;
-    box-shadow: 0 18px 50px rgba(0,0,0,0.5); display: flex; flex-direction: column;
-  }
-  .post .thumb { position: relative; aspect-ratio: 16/9; background: #000; cursor: pointer; }
-  .post .thumb img { width: 100%; height: 100%; object-fit: cover; opacity: 0.85; }
-  .post .thumb .play {
-    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  }
-  .post .thumb .play span {
-    width: 54px; height: 54px; background: rgba(82,201,163,0.92); border-radius: 50%;
-    display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.2rem; padding-left: 4px;
-  }
-  .post .thumb iframe { width: 100%; height: 100%; border: 0; }
-  .post .body { padding: 1.5rem 1.6rem 1.8rem; display: flex; flex-direction: column; flex: 1; }
-  .post .date { color: var(--mint-text); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
-  .post h2 { font-size: 1.35rem; margin-bottom: 0.6rem; }
-  .post p { color: var(--text-dim); font-size: 0.96rem; flex: 1; }
-  .post a.read { color: var(--mint-text); text-decoration: none; font-weight: 700; font-size: 0.9rem; margin-top: 1.1rem; text-transform: uppercase; letter-spacing: 0.06em; }
-
-  footer { background: var(--bg-deep); border-top: 1px solid rgba(255,255,255,0.07); padding: 2.5rem 0; text-align: center; color: #8a8a8a; font-size: 0.9rem; }
-  footer a { color: var(--mint-text); text-decoration: none; }
-
   @media (max-width: 920px) {
-    .posts { grid-template-columns: 1fr; }
-    .blog-hero h1 { font-size: 2.1rem; }
+    .nav-links a { display: none; }
+    .journal-header { grid-template-columns: 1fr; gap: 1.8rem; }
+    .jh-title { font-size: 2.1rem; }
+    .journal-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+    .post-row { grid-template-columns: 1fr; }
+    .recent { position: static; }
   }
 </style>
 </head>
@@ -95,7 +103,6 @@
       <a href="/#testimonials">Testimonials</a>
       <a href="/#faq">FAQ</a>
       <a href="/blog/">Journal</a>
-      <a class="login" href="https://app.kartra.com/login" target="_blank" rel="noopener">Member Login</a>
     </nav>
     <div class="nav-social">
       <a class="yt" href="https://www.youtube.com/@CMMSProAI" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a>
@@ -107,66 +114,111 @@
   </div>
 </header>
 
-<section class="blog-hero">
-  <h1>The Stiff Hand Journal</h1>
-  <p>Clinical insights, video lessons and case discussions on stiff hand rehabilitation and the CMMS technique — by Robyn Midgley.</p>
-</section>
-
 <div class="wrap">
-  <div class="posts">
 
-    <!-- TEMPLATE: duplicate an <article> block for each new post.
-         For a video post: set data-yt to the YouTube video ID.
-         For a text-only post: replace the .thumb div with a plain header. -->
+  <!-- Header: title + description left, image right -->
+  <section class="journal-header">
+    <div>
+      <p class="jh-kicker">CMMSPro.AI · Clinical Blog</p>
+      <h1 class="jh-title">The Stiff Hand Journal</h1>
+      <p class="jh-desc">Clinical insights, video lessons and case discussions on stiff hand rehabilitation and the CMMS technique — written and reviewed by Robyn Midgley, Accredited Hand &amp; Upper Extremity Therapist. Evidence-based reading for therapists who want to think sharper and treat smarter.</p>
+    </div>
+    <div class="jh-img">
+      <img src="https://d11n7da8rpqbjy.cloudfront.net/robynmidgley/948862628569Copy_of_S_T_Summit_Aug_Cover__2_.png" alt="Hand therapist reviewing a stiff hand case" loading="lazy">
+    </div>
+  </section>
 
-    <article class="post">
-      <div class="thumb" data-yt="x58R6nJqeuw">
-        <img src="https://i.ytimg.com/vi/x58R6nJqeuw/hqdefault.jpg" alt="Video: Inside CMMSPro.AI — the 3D infrastructure behind your AI mentor" loading="lazy">
-        <div class="play"><span>▶</span></div>
-      </div>
-      <div class="body">
-        <p class="date">July 2026 · Video</p>
-        <h2>Inside CMMSPro.AI: the 3D infrastructure behind your AI mentor</h2>
-        <p>Take a look under the hood — how CMMSPro.AI is built to guide your clinical reasoning through the stiff hand, from intake to cast design, in 10 languages.</p>
-        <a class="read" href="https://www.youtube.com/watch?v=x58R6nJqeuw">Watch on YouTube →</a>
-      </div>
-    </article>
+  <!-- Post feed + Recent Posts sidebar -->
+  <div class="journal-layout">
 
-    <article class="post">
-      <div class="body">
-        <p class="date">Clinical guide</p>
-        <h2>Joint Stiffness: Causes, Stages and How It's Treated</h2>
-        <p>How stiffness develops through bleeding, oedema and fibrosis — and why timing changes the outcome. A grounding for every stiff-hand case.</p>
-        <a class="read" href="/blog/joint-stiffness.html">Read more →</a>
-      </div>
-    </article>
+    <main class="post-list">
 
-    <article class="post">
-      <div class="body">
-        <p class="date">Clinical guide</p>
-        <h2>Therapeutic Casting in Hand Rehabilitation</h2>
-        <p>Serial casting versus the CMMS technique — how each restores motion in the stiff hand, and when to reach for which.</p>
-        <a class="read" href="/blog/therapeutic-casting.html">Read more →</a>
-      </div>
-    </article>
+      <article class="post-row">
+        <a class="pr-thumb" href="https://www.youtube.com/watch?v=x58R6nJqeuw" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/x58R6nJqeuw/hqdefault.jpg" alt="Video: Inside CMMSPro.AI" loading="lazy">
+          <span class="play"><span>▶</span></span>
+        </a>
+        <div class="pr-body">
+          <p class="pr-tag">July 2026 · Video</p>
+          <h2><a href="https://www.youtube.com/watch?v=x58R6nJqeuw" target="_blank" rel="noopener">Inside CMMSPro.AI: the 3D infrastructure behind your AI mentor</a></h2>
+          <p>Take a look under the hood — how CMMSPro.AI is built to guide your clinical reasoning through the stiff hand, from intake to cast design, in 10 languages.</p>
+          <a class="pr-read" href="https://www.youtube.com/watch?v=x58R6nJqeuw" target="_blank" rel="noopener">Watch on YouTube →</a>
+        </div>
+      </article>
 
-    <article class="post">
-      <div class="body">
-        <p class="date">Science explainer</p>
-        <h2>Mechanoradicals: The Molecular Link Between Force and Healing</h2>
-        <p>The 2020 discovery that explains why gentle, sustained loading heals connective tissue — and forceful stretching can harm it.</p>
-        <a class="read" href="/blog/mechanoradicals.html">Read more →</a>
-      </div>
-    </article>
+      <article class="post-row">
+        <a class="pr-thumb" href="/blog/joint-stiffness.html">
+          <img src="https://d11n7da8rpqbjy.cloudfront.net/robynmidgley/948862628569Copy_of_S_T_Summit_Aug_Cover__2_.png" alt="Joint stiffness assessment" loading="lazy">
+        </a>
+        <div class="pr-body">
+          <p class="pr-tag">Clinical guide</p>
+          <h2><a href="/blog/joint-stiffness.html">Joint Stiffness: Causes, Stages and How It's Treated</a></h2>
+          <p>How stiffness develops through bleeding, oedema and fibrosis — and why timing changes the outcome. A grounding for every stiff-hand case.</p>
+          <a class="pr-read" href="/blog/joint-stiffness.html">Read more →</a>
+        </div>
+      </article>
 
-    <article class="post">
-      <div class="body">
-        <p class="date">Clinical guide</p>
-        <h2>Contracture: Conservative Management Explained</h2>
-        <p>Every non-surgical option for joint contractures of the hand — stretching, orthoses, casting, CMMS, botulinum toxin — and when each is used.</p>
-        <a class="read" href="/blog/contracture.html">Read more →</a>
-      </div>
-    </article>
+      <article class="post-row">
+        <a class="pr-thumb" href="/blog/therapeutic-casting.html">
+          <img src="https://d11n7da8rpqbjy.cloudfront.net/robynmidgley/155881262570Copy_of_S_T_Summit_Aug_Cover__2_.jpg" alt="CMMS plaster of Paris cast designs" loading="lazy">
+        </a>
+        <div class="pr-body">
+          <p class="pr-tag">Clinical guide</p>
+          <h2><a href="/blog/therapeutic-casting.html">Therapeutic Casting in Hand Rehabilitation</a></h2>
+          <p>Serial casting versus the CMMS technique — how each restores motion in the stiff hand, and when to reach for which.</p>
+          <a class="pr-read" href="/blog/therapeutic-casting.html">Read more →</a>
+        </div>
+      </article>
+
+      <article class="post-row">
+        <a class="pr-thumb" href="/blog/mechanoradicals.html">
+          <img src="https://d11n7da8rpqbjy.cloudfront.net/robynmidgley/155881262570Copy_of_S_T_Summit_Aug_Cover__2_.jpg" style="object-position: 70% center;" alt="Collagen and mechanical force" loading="lazy">
+        </a>
+        <div class="pr-body">
+          <p class="pr-tag">Science explainer</p>
+          <h2><a href="/blog/mechanoradicals.html">Mechanoradicals: The Molecular Link Between Force and Healing</a></h2>
+          <p>The 2020 discovery that explains why gentle, sustained loading heals connective tissue — and forceful stretching can harm it.</p>
+          <a class="pr-read" href="/blog/mechanoradicals.html">Read more →</a>
+        </div>
+      </article>
+
+      <article class="post-row">
+        <a class="pr-thumb" href="/blog/contracture.html">
+          <img src="https://d11n7da8rpqbjy.cloudfront.net/robynmidgley/948862628569Copy_of_S_T_Summit_Aug_Cover__2_.png" style="object-position: 30% center;" alt="Joint contracture of the hand" loading="lazy">
+        </a>
+        <div class="pr-body">
+          <p class="pr-tag">Clinical guide</p>
+          <h2><a href="/blog/contracture.html">Contracture: Conservative Management Explained</a></h2>
+          <p>Every non-surgical option for joint contractures of the hand — stretching, orthoses, casting, CMMS, botulinum toxin — and when each is used.</p>
+          <a class="pr-read" href="/blog/contracture.html">Read more →</a>
+        </div>
+      </article>
+
+    </main>
+
+    <aside class="recent">
+      <h3>Recent Posts</h3>
+      <a class="recent-item" href="https://www.youtube.com/watch?v=x58R6nJqeuw" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/x58R6nJqeuw/hqdefault.jpg" alt="" loading="lazy">
+        <span>Inside CMMSPro.AI: the 3D infrastructure behind your AI mentor</span>
+      </a>
+      <a class="recent-item" href="/blog/joint-stiffness.html">
+        <img src="https://d11n7da8rpqbjy.cloudfront.net/robynmidgley/948862628569Copy_of_S_T_Summit_Aug_Cover__2_.png" alt="" loading="lazy">
+        <span>Joint Stiffness: Causes, Stages and How It's Treated</span>
+      </a>
+      <a class="recent-item" href="/blog/therapeutic-casting.html">
+        <img src="https://d11n7da8rpqbjy.cloudfront.net/robynmidgley/155881262570Copy_of_S_T_Summit_Aug_Cover__2_.jpg" alt="" loading="lazy">
+        <span>Therapeutic Casting in Hand Rehabilitation</span>
+      </a>
+      <a class="recent-item" href="/blog/mechanoradicals.html">
+        <img src="https://d11n7da8rpqbjy.cloudfront.net/robynmidgley/155881262570Copy_of_S_T_Summit_Aug_Cover__2_.jpg" alt="" loading="lazy">
+        <span>Mechanoradicals: The Molecular Link Between Force and Healing</span>
+      </a>
+      <a class="recent-item" href="/blog/contracture.html">
+        <img src="https://d11n7da8rpqbjy.cloudfront.net/robynmidgley/948862628569Copy_of_S_T_Summit_Aug_Cover__2_.png" alt="" loading="lazy">
+        <span>Contracture: Conservative Management Explained</span>
+      </a>
+    </aside>
 
   </div>
 </div>
@@ -184,16 +236,6 @@
     <div class="footer-tag">Think sharper. Decide faster. Treat smarter.</div>
   </div>
 </footer>
-
-<script>
-  document.querySelectorAll('.thumb[data-yt]').forEach(function (t) {
-    t.addEventListener('click', function () {
-      var id = t.getAttribute('data-yt');
-      t.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id +
-        '?autoplay=1&rel=0" title="Video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
-    });
-  });
-</script>
 
 </body>
 </html>

@@ -95,6 +95,7 @@
   section { padding: 5.5rem 0; }
   .kicker { font-family: var(--serif); font-style: italic; color: var(--mint-text); text-align: center; font-size: 1.25rem; margin-bottom: 0.6rem; }
   h2.title { font-size: 2.7rem; text-align: center; margin-bottom: 1rem; }
+  .section-sub { text-align: center; max-width: 640px; margin: 0 auto; color: var(--text-dim); font-size: 1.05rem; }
   .center { text-align: center; }
 
   /* ===== Intro ===== */
@@ -166,6 +167,21 @@
   /* ===== Bundle / CTA ===== */
   .bundle { background: var(--bg-deep); text-align: center; }
   .bundle img { max-width: 980px; width: 100%; margin: 2.5rem auto 3rem; border-radius: 8px; box-shadow: 0 26px 80px rgba(0,0,0,0.6); }
+
+  /* ===== From the Journal ===== */
+  .journal { background: var(--bg-deep); }
+  .journal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 3rem; }
+  .journal-card {
+    background: linear-gradient(165deg, #191919, #131715);
+    border: 1px solid rgba(255,255,255,0.09); border-radius: 14px; padding: 1.7rem;
+    text-decoration: none; display: flex; flex-direction: column;
+    box-shadow: 0 14px 44px rgba(0,0,0,0.4); transition: transform 0.15s, border-color 0.15s;
+  }
+  .journal-card:hover { transform: translateY(-3px); border-color: rgba(82,201,163,0.5); }
+  .jc-tag { color: var(--mint-text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; font-family: var(--sans); margin-bottom: 0.7rem; }
+  .journal-card h3 { color: #fff; font-size: 1.25rem; margin-bottom: 0.6rem; line-height: 1.3; }
+  .journal-card p { color: var(--text-dim); font-size: 0.95rem; flex: 1; }
+  .jc-read { color: var(--mint-text); font-family: var(--sans); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 1.2rem; }
 
   /* ===== Testimonials ===== */
   .testimonials { background: var(--bg); }
@@ -245,7 +261,7 @@
     .hero h1 { font-size: 2.15rem; }
     .hero .sub { font-size: 1.15rem; }
     h2.title, .pricing h2.path { font-size: 2.1rem; }
-    .intro-grid, .plans, .benefit-grid, .video-grid, .faq-grid { grid-template-columns: 1fr; }
+    .intro-grid, .plans, .benefit-grid, .video-grid, .faq-grid, .journal-grid { grid-template-columns: 1fr; }
     section { padding: 3.5rem 0; }
     .does, .about { background-attachment: scroll; }
   }
@@ -262,7 +278,7 @@
       <a href="#pricing">Pricing</a>
       <a href="#testimonials">Testimonials</a>
       <a href="#faq">FAQ</a>
-      <a href="/blog/">Blog</a>
+      <a href="/blog/">Journal</a>
       <a class="login" href="https://robynmidgley.kartra.com/portal/CMMSPROStrategist">Member Login</a>
     </nav>
     <div class="nav-social">
@@ -539,6 +555,38 @@
     <p><strong>CMMSPro.AI does not guess or scrape the internet. It reflects what works — and how Robyn thinks.</strong></p>
     <p>It provides immediate and affordable access to the science of the Casting Motion to Mobilise Stiffness technique, as well as expert guidance on its application.</p>
     <p><strong>CMMSPro.AI safeguards both the therapist and the patient.</strong></p>
+  </div>
+</section>
+
+<!-- ============ FROM THE JOURNAL ============ -->
+<section class="journal" id="journal">
+  <div class="wrap">
+    <p class="kicker">The Stiff Hand Journal</p>
+    <h2 class="title">From the Journal</h2>
+    <p class="section-sub" style="color:#b8cdd8;">Clinical insights and video lessons on stiff hand rehabilitation and the CMMS technique.</p>
+    <div class="journal-grid">
+      <a class="journal-card" href="/blog/joint-stiffness.html">
+        <span class="jc-tag">Clinical guide</span>
+        <h3>Joint Stiffness: Causes, Stages and How It's Treated</h3>
+        <p>How stiffness develops through bleeding, oedema and fibrosis — and why timing changes the outcome.</p>
+        <span class="jc-read">Read more →</span>
+      </a>
+      <a class="journal-card" href="/blog/therapeutic-casting.html">
+        <span class="jc-tag">Clinical guide</span>
+        <h3>Therapeutic Casting in Hand Rehabilitation</h3>
+        <p>Serial casting versus the CMMS technique — how each restores motion, and when to reach for which.</p>
+        <span class="jc-read">Read more →</span>
+      </a>
+      <a class="journal-card" href="/blog/mechanoradicals.html">
+        <span class="jc-tag">Science explainer</span>
+        <h3>Mechanoradicals: The Molecular Link Between Force and Healing</h3>
+        <p>The 2020 discovery that explains why gentle, sustained loading heals connective tissue.</p>
+        <span class="jc-read">Read more →</span>
+      </a>
+    </div>
+    <div class="center" style="margin-top:2.5rem;">
+      <a class="btn btn-ghost" href="/blog/">Read the full journal →</a>
+    </div>
   </div>
 </section>
 

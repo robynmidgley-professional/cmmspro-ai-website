@@ -168,6 +168,23 @@
   .bundle { background: var(--bg-deep); text-align: center; }
   .bundle img { max-width: 980px; width: 100%; margin: 2.5rem auto 3rem; border-radius: 8px; box-shadow: 0 26px 80px rgba(0,0,0,0.6); }
 
+  /* ===== See it in action (demo) ===== */
+  .demo { background: var(--bg); }
+  .demo-video {
+    position: relative; max-width: 840px; margin: 3rem auto 0; aspect-ratio: 16/9;
+    border-radius: 14px; overflow: hidden; background: #000; cursor: pointer;
+    box-shadow: 0 26px 80px rgba(0,0,0,0.6); border: 1px solid rgba(82,201,163,0.35);
+  }
+  .demo-video img { width: 100%; height: 100%; object-fit: cover; opacity: 0.9; }
+  .demo-video .play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+  .demo-video .play span {
+    width: 78px; height: 78px; background: rgba(82,201,163,0.95); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.9rem;
+    padding-left: 5px; transition: transform 0.15s;
+  }
+  .demo-video:hover .play span { transform: scale(1.1); }
+  .demo-video iframe { width: 100%; height: 100%; border: 0; }
+
   /* ===== From the Journal ===== */
   .journal { background: var(--bg-deep); }
   .journal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 3rem; }
@@ -345,6 +362,22 @@
       <li><span class="tick">✔</span> Understand patient education, contra-indications, cast hygiene, cast exercises and safety protocols.</li>
     </ul>
     <img class="casts-img" src="https://d11n7da8rpqbjy.cloudfront.net/robynmidgley/155881262570Copy_of_S_T_Summit_Aug_Cover__2_.jpg" alt="CMMS plaster of Paris cast designs" loading="lazy">
+  </div>
+</section>
+
+<!-- ============ SEE IT IN ACTION ============ -->
+<section class="demo" id="demo">
+  <div class="wrap">
+    <p class="kicker">Watch the mentor work</p>
+    <h2 class="title">See CMMSPro.AI in Action</h2>
+    <p class="section-sub">Watch the AI mentor reason through a real stiff thumb case — from movement-pattern assessment to cast design and progression.</p>
+    <div class="video demo-video" data-yt="L01QmWT89HQ">
+      <img src="https://i.ytimg.com/vi/L01QmWT89HQ/hqdefault.jpg" alt="CMMSPro.AI mentoring a stiff thumb case" loading="lazy">
+      <div class="play"><span>▶</span></div>
+    </div>
+    <div class="center" style="margin-top:2.4rem;">
+      <a class="btn" href="#pricing">Start your 7-day free trial</a>
+    </div>
   </div>
 </section>
 

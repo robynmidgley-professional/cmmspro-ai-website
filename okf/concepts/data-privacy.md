@@ -15,5 +15,5 @@ This architecture is intended to support therapists' obligations under privacy r
 
 # Related
 
-* Applies to [image analysis](/concepts/image-analysis.md)
-* Enables [continuing mentoring](/features/continuing-mentoring.md), where the therapist re-supplies a prior summary
+* Applies to [image analysis](/okf/concepts/image-analysis.md)
+* Enables [continuing mentoring](/okf/features/continuing-mentoring.md), where the therapist re-supplies a prior summary

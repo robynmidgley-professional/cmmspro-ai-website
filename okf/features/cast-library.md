@@ -13,5 +13,5 @@ The portal holds cast reference images and teaching videos covering how to make 
 
 # Related
 
-* Used during [a session](/concepts/session.md)
-* Part of [accredited CMMS training](/training/cmms-training.md)
+* Used during [a session](/okf/concepts/session.md)
+* Part of [accredited CMMS training](/okf/training/cmms-training.md)

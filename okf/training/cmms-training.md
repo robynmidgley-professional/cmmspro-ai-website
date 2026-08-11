@@ -15,6 +15,6 @@ CMMSPro.AI offers full, accredited CMMS training to Catalyst and Legacy members,
 
 # Related
 
-* Access varies by [subscription plan](/pricing/plans.md)
-* Teaches the [CMMS technique](/concepts/cmms.md)
-* Complemented by the [CMMS Club](/training/cmms-club.md)
+* Access varies by [subscription plan](/okf/pricing/plans.md)
+* Teaches the [CMMS technique](/okf/concepts/cmms.md)
+* Complemented by the [CMMS Club](/okf/training/cmms-club.md)

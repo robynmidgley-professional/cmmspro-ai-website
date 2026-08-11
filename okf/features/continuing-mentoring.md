@@ -13,5 +13,5 @@ Because CMMSPro.AI does not retain data between sessions, a therapist continues 
 
 # Related
 
-* Uses the summary from [reports](/features/reports.md)
-* Consistent with [data and privacy](/concepts/data-privacy.md)
+* Uses the summary from [reports](/okf/features/reports.md)
+* Consistent with [data and privacy](/okf/concepts/data-privacy.md)

@@ -13,5 +13,5 @@ Members receive monthly live mentoring through the CMMS Club on Zoom, alongside 
 
 # Related
 
-* Part of the [accredited CMMS training](/training/cmms-training.md) offering
-* Included with higher [subscription plans](/pricing/plans.md)
+* Part of the [accredited CMMS training](/okf/training/cmms-training.md) offering
+* Included with higher [subscription plans](/okf/pricing/plans.md)

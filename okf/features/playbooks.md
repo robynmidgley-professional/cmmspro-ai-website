@@ -13,5 +13,5 @@ The portal includes playbooks for a variety of diagnoses where the CMMS techniqu
 
 # Related
 
-* Appear during [a session](/concepts/session.md)
-* Grounded in the [CMMS technique](/concepts/cmms.md)
+* Appear during [a session](/okf/concepts/session.md)
+* Grounded in the [CMMS technique](/okf/concepts/cmms.md)

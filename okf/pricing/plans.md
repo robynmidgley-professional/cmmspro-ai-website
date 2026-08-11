@@ -25,5 +25,5 @@ To talk through the tool and the CMMS technique first, therapists can book a CMM
 
 # Related
 
-* Training access is detailed in [accredited CMMS training](/training/cmms-training.md) and the [CMMS Club](/training/cmms-club.md)
-* Full product overview: [CMMSPro.AI](/concepts/product.md)
+* Training access is detailed in [accredited CMMS training](/okf/training/cmms-training.md) and the [CMMS Club](/okf/training/cmms-club.md)
+* Full product overview: [CMMSPro.AI](/okf/concepts/product.md)

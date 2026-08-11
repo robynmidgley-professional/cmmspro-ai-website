@@ -17,5 +17,5 @@ The mentoring is fully conversational in ten languages: English, Dutch, Portugue
 
 # Related
 
-* Part of [how a session works](/concepts/session.md)
-* See the full [product overview](/concepts/product.md)
+* Part of [how a session works](/okf/concepts/session.md)
+* See the full [product overview](/okf/concepts/product.md)

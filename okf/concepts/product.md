@@ -23,9 +23,9 @@ All hand therapists, at any level of experience. The therapist selects their lev
 
 # Related
 
-* Built on the [CMMS technique](/concepts/cmms.md)
-* Walk through [how a session works](/concepts/session.md)
-* Includes [live mentoring](/concepts/live-mentoring.md) and [image analysis](/concepts/image-analysis.md)
-* Backed by [accredited CMMS training](/training/cmms-training.md)
-* See [pricing](/pricing/plans.md) — start a free 7-day trial at https://www.cmmspro.ai
+* Built on the [CMMS technique](/okf/concepts/cmms.md)
+* Walk through [how a session works](/okf/concepts/session.md)
+* Includes [live mentoring](/okf/concepts/live-mentoring.md) and [image analysis](/okf/concepts/image-analysis.md)
+* Backed by [accredited CMMS training](/okf/training/cmms-training.md)
+* See [pricing](/okf/pricing/plans.md) — start a free 7-day trial at https://www.cmmspro.ai
 * Prefer to talk first? Book a CMMS discovery call at https://forms-robynmidgley.vercel.app/book

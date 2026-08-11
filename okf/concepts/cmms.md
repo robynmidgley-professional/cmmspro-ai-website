@@ -17,5 +17,5 @@ CMMSPro.AI is based on Judy Colditz's framework and on Robyn Midgley's 25 years 
 
 # Related
 
-* Applied through [how a session works](/concepts/session.md)
-* Taught via [accredited CMMS training](/training/cmms-training.md)
+* Applied through [how a session works](/okf/concepts/session.md)
+* Taught via [accredited CMMS training](/okf/training/cmms-training.md)

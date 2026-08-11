@@ -19,6 +19,6 @@ The mentor discusses the case and questions the therapist — to surface red fla
 
 # Related
 
-* Uses [live mentoring](/concepts/live-mentoring.md) and [image analysis](/concepts/image-analysis.md)
-* Draws on [diagnostic playbooks](/features/playbooks.md) and the [cast reference library](/features/cast-library.md)
-* Produces a [session summary and clinical report](/features/reports.md)
+* Uses [live mentoring](/okf/concepts/live-mentoring.md) and [image analysis](/okf/concepts/image-analysis.md)
+* Draws on [diagnostic playbooks](/okf/features/playbooks.md) and the [cast reference library](/okf/features/cast-library.md)
+* Produces a [session summary and clinical report](/okf/features/reports.md)

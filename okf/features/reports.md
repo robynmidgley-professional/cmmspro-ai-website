@@ -13,5 +13,5 @@ A session produces two documents. The mentoring summary captures what was discus
 
 # Related
 
-* Produced at the end of [a session](/concepts/session.md)
-* The summary can be re-supplied for [continuing mentoring](/features/continuing-mentoring.md)
+* Produced at the end of [a session](/okf/concepts/session.md)
+* The summary can be re-supplied for [continuing mentoring](/okf/features/continuing-mentoring.md)
